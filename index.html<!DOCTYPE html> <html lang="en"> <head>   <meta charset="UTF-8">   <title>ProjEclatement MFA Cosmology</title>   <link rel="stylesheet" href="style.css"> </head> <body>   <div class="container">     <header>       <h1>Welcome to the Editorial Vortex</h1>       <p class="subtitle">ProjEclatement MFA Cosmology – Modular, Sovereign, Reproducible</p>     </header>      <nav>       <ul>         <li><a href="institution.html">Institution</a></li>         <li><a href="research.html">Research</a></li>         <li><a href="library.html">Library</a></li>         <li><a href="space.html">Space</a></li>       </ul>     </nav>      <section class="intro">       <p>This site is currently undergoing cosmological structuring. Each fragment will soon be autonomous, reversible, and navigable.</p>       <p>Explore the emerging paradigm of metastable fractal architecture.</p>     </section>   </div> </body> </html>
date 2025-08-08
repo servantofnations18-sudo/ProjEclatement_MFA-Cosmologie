@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProjEclatement MFA Cosmology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to the Editorial Vortex</h1>
+      <p class="subtitle">ProjEclatement MFA Cosmology – Modular, Sovereign, Reproducible</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="institution.html">Institution</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="space.html">Space</a></li>
+      </ul>
+    </nav>
+
+    <section class="intro">
+      <p>This site is currently undergoing cosmological structuring. Each fragment will soon be autonomous, reversible, and navigable.</p>
+      <p>Explore the emerging paradigm of metastable fractal architecture.</p>
+    </section>
+  </div>
+</body>
+</html>
