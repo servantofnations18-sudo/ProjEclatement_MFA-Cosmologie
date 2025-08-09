@@ -1,146 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>MFA Cosmology Institutions</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .lang-switch { position: absolute; top: 25px; right: 30px; display: flex; gap: 10px; }
-    .lang-switch button, .lang-switch .gtranslate { 
-      padding: 6px 13px; border-radius: 6px; border: none; cursor: pointer; 
-      font-weight: 500; background: #23294e; color: #f0f0f0; 
-      transition: background 0.18s, color 0.18s;
-    }
-    .lang-switch button.selected { background: #fca311; color: #22223b; }
-    .lang-switch .gtranslate { background: #232849; }
-    .lang-switch .gtranslate img { height: 18px; vertical-align: middle; margin-right: 4px; }
-    @media (max-width: 700px) {
-      .lang-switch { position: static; justify-content: center; margin-bottom: 10px; }
-    }
-    .logo-vortex {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto 18px auto;
-      height: 110px;
-      width: 110px;
-    }
-    /* Animation d'éclatement/vortex */
-    .logo-vortex svg {
-      animation: vortex-spin 4s linear infinite;
-      filter: drop-shadow(0 3px 10px #2228);
-    }
-    @keyframes vortex-spin {
-      0% { transform: rotate(0deg);}
-      100% { transform: rotate(360deg);}
-    }
-    .logo-vortex .fragment {
-      transform-origin: 32px 32px;
-      animation: fragment-float 2.2s ease-in-out infinite alternate;
-    }
-    .logo-vortex .fragment2 { animation-delay: 0.4s;}
-    .logo-vortex .fragment3 { animation-delay: 0.8s;}
-    .logo-vortex .fragment4 { animation-delay: 1.2s;}
-    @keyframes fragment-float {
-      0% { transform: scale(1) translate(0,0);}
-      100% { transform: scale(1.08) translate(-2px, -7px);}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Accueil - Cosmologie MFA</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="lang-switch">
-    <button id="enBtn" class="selected">English</button>
-    <button id="frBtn">Français</button>
-    <div class="gtranslate" id="gtranslate_container">
-      <img src="https://cdn.jsdelivr.net/gh/GoogleChromeLabs/i18n-iso-countries/flags/earth.svg" alt="Google Translate" />
-      <span>Other languages</span>
-      <div id="google_translate_element" style="display:none"></div>
-    </div>
-  </div>
-  <header>
-    <div class="logo-vortex" title="MFA Cosmology logo – quartz vortex">
-      <svg width="110" height="110" viewBox="0 0 64 64">
-        <!-- Quartz central -->
-        <polygon class="fragment" points="32,10 39,22 32,34 25,22" fill="#fca311" stroke="#fff" stroke-width="2"/>
-        <!-- Fragments éclatés -->
-        <polygon class="fragment fragment2" points="25,22 19,27 23,36 32,34" fill="#fca311" stroke="#fff" stroke-width="2"/>
-        <polygon class="fragment fragment3" points="39,22 45,27 41,36 32,34" fill="#fca311" stroke="#fff" stroke-width="2"/>
-        <polygon class="fragment fragment4" points="32,34 37,43 32,54 27,43" fill="#fca311" stroke="#fff" stroke-width="2"/>
-        <!-- Effet vortex -->
-        <ellipse cx="32" cy="32" rx="18" ry="8" fill="none" stroke="#fca311" stroke-width="2" opacity="0.7"/>
-        <ellipse cx="32" cy="32" rx="13" ry="5" fill="none" stroke="#fca311" stroke-width="1" opacity="0.5"/>
-      </svg>
-    </div>
-    <h1 data-en="MFA Cosmology Institutions" data-fr="Institutions de MFA Cosmology">MFA Cosmology Institutions</h1>
+<header>
+    <h1>Cosmologie MFA</h1>
     <nav>
-      <ul>
-        <li><a data-en="Institutions" data-fr="Institutions" href="institutions.html">Institutions</a></li>
-        <li><a data-en="Research" data-fr="Recherches" href="recherches.html">Research</a></li>
-        <li><a data-en="Library" data-fr="Bibliothèque" href="bibliotheque.html">Library</a></li>
-        <li><a data-en="Bookstore" data-fr="Librairie" href="librairie.html">Bookstore</a></li>
-        <li><a data-en="Shop" data-fr="Boutique" href="boutique.html">Shop</a></li>
-        <li><a data-en="Scientific Publications" data-fr="Publications scientifiques" href="publications.html">Scientific Publications</a></li>
-        <li><a data-en="InfosCosmos" data-fr="InfosCosmos" href="infoscosmos.html">InfosCosmos</a></li>
-        <li>
-          <a data-en="Community" data-fr="Communauté" href="#">Community</a>
-          <ul class="submenu">
-            <li><a href="https://wa.me/" target="_blank">WhatsApp</a></li>
-            <li><a href="https://facebook.com/" target="_blank">Facebook</a></li>
-            <li><a href="https://tiktok.com/" target="_blank">TikTok</a></li>
-            <li><a href="https://telegram.org/" target="_blank">Telegram</a></li>
-          </ul>
-        </li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="institutions.html">Institutions</a></li>
+            <li><a href="recherches.html">Recherches</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-  </header>
-  <main>
-    <section class="intro">
-      <h2 data-en="Welcome to the editorial vortex" data-fr="Bienvenue dans le vortex éditorial">Welcome to the editorial vortex</h2>
-      <p data-en="This site is being structured cosmologically.<br>Discover institutions, research, scientific publications, and more about MFA cosmology."
-         data-fr="Ce site est en cours de structuration cosmologique.<br>Découvrez les institutions, recherches, publications et plus sur la cosmologie MFA.">
-        This site is being structured cosmologically.<br>
-        Discover institutions, research, scientific publications, and more about MFA cosmology.
-      </p>
-    </section>
-    <section class="portals">
-      <h2 data-en="External portals" data-fr="Portails externes">External portals</h2>
-      <div class="portals-links">
-        <a href="https://en.wikipedia.org/wiki/Cosmology" target="_blank" data-en="Wikipedia" data-fr="Wikipédia">Wikipedia</a>
-        <a href="https://www.nasa.gov/" target="_blank" data-en="NASA" data-fr="NASA">NASA</a>
-        <a href="https://arxiv.org/" target="_blank" data-en="arXiv" data-fr="arXiv">arXiv</a>
-        <a href="https://store.steampowered.com/tags/en/Space/" target="_blank" data-en="Space Games" data-fr="Jeux sur l’espace">Space Games</a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p data-en="&copy; 2025 MFA Cosmology" data-fr="&copy; 2025 MFA Cosmology">&copy; 2025 MFA Cosmology</p>
-  </footer>
-  <script>
-    // Simple EN/FR switch
-    function switchLang(lang) {
-      document.querySelectorAll('[data-en]').forEach(el => {
-        el.innerHTML = el.getAttribute('data-' + lang);
-      });
-      document.getElementById('enBtn').classList.toggle('selected', lang === 'en');
-      document.getElementById('frBtn').classList.toggle('selected', lang === 'fr');
-    }
-    document.getElementById('enBtn').onclick = () => switchLang('en');
-    document.getElementById('frBtn').onclick = () => switchLang('fr');
-
-    // Google Translate pop-up
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-    const gtranslate = document.getElementById('gtranslate_container');
-    gtranslate.onclick = function(e) {
-      e.stopPropagation();
-      document.getElementById('google_translate_element').style.display = 'block';
-    };
-    window.addEventListener('click', () => {
-      document.getElementById('google_translate_element').style.display = 'none';
-    });
-  </script>
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</header>
+<main>
+    <h2>Bienvenue sur la plateforme Cosmologie MFA</h2>
+    <p>
+        Découvrez nos institutions partenaires, axes de recherches, projets et comment nous contacter.
+    </p>
+</main>
+<footer>
+    <p>&copy; 2025 Cosmologie MFA</p>
+</footer>
 </body>
 </html>
